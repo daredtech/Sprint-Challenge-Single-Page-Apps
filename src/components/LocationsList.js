@@ -12,7 +12,7 @@ export default function LocationsList() {
         .get('https://rickandmortyapi.com/api/location/')
         // if request was successful 
         .then(response =>{
-          console.log('The response data: ', response.data.results);
+          console.log('The response data: ', response.data);
           //to assign the received data to locations
           setLocations(response.data.results);
         })
