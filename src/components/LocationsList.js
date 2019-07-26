@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Location from './Location'
+import LocationCard  from './LocationCard'
 
 export default function LocationsList() {
     // to track data from useEffect
@@ -29,7 +29,7 @@ export default function LocationsList() {
       {/* to go over array and display each location */}
       {locations.map((location, key) => (
         // console.log(location);
-        <Location key={key} name={location.name} type={location.type} dimension={location.dimension} residents={location.residents.length}/>
+        <LocationCard  key={key} name={location.name} type={location.type} dimension={location.dimension} residents={location.residents.length}/>
     ))}
       </section>
   

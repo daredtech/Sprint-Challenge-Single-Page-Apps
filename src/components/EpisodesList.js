@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import EpisodeCard from './EpisodeCard'
 
 export default function EpisodesList() {
     // to track data from useEffect
@@ -26,9 +27,11 @@ export default function EpisodesList() {
   
     return <section className='episodes-list grid-view'>
       {/* to go over array and display each episode */}
-      {episodes.map(episode => {
-        console.log(episode);
-      })}
+      {episodes.map((episode, key) => 
+        // console.log(episode);
+        <EpisodeCard key={key} name={episode.name} iardate={episode.air_date} episode={episode.episode}/>
+
+      )}
       </section>
   
   }
