@@ -15,7 +15,7 @@ export default function App() {
     <AppRouter />
     {/* temp */}
     {/* <CharacterList/> */}
-    <LocationsList/>
+    {/* <LocationsList/> */}
     {/* <EpisodesList/> */}
   </main>
 }
