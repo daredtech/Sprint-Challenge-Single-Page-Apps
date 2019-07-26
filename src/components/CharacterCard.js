@@ -15,7 +15,7 @@ export default function CharacterCard (props) {
           <Card.Description>Origin: {origin}</Card.Description>
         </Card.Content>
     <Card.Content extra>
-      <a> <Icon name='tv'/> Episodes </a>
+       <Icon name='tv'/> Episodes 
     </Card.Content>
   </Card>
 
