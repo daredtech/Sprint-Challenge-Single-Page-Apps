@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
 export default function Character (props) {
-    //setting the state
+    
     const {name, status, species, origin, location, characterImg} = props;
 
     return (
@@ -15,10 +15,7 @@ export default function Character (props) {
           <Card.Description>Origin: {origin}</Card.Description>
         </Card.Content>
     <Card.Content extra>
-      <a>
-        <Icon name='tv' />
-         Episodes
-      </a>
+      <a> <Icon name='tv'/> Episodes </a>
     </Card.Content>
   </Card>
 
