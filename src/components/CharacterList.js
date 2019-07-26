@@ -12,7 +12,9 @@ export default function CharacterList() {
       .get('https://rickandmortyapi.com/api/character/')
       // if request was successful 
       .then(response =>{
-        console.log('The response data: ',response.data);
+        console.log('The response data: ', response.data.results);
+        //to assign the received data to characters
+        setCharacters(response.data.results);
       })
       // if request wasn't successful
       .catch(erroe =>{
@@ -23,8 +25,10 @@ export default function CharacterList() {
   }, [])
 
   return <section className='character-list grid-view'>
-
-      <h2>TODO: `array.map()` over your state here!</h2>
+    {/* to go over array and display each character */}
+    {characters.map(character => {
+      console.log(character);
+    })}
     </section>
 
 }
