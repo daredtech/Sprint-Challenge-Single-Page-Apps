@@ -5,6 +5,7 @@ import AppRouter from './components/AppRouter.js';
 
 // temp
 import CharacterList from './components/CharacterList';
+import LocationsList from './components/LocationsList';
 
 export default function App() {
   return <main>
@@ -12,6 +13,7 @@ export default function App() {
     <TabNav />
     <AppRouter />
     {/* temp */}
-    <CharacterList/>
+    {/* <CharacterList/> */}
+    <LocationsList/>
   </main>
 }
