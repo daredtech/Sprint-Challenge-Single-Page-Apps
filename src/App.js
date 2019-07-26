@@ -14,8 +14,8 @@ export default function App() {
     <TabNav />
     <AppRouter />
     {/* temp */}
-    {/* <CharacterList/> */}
+    <CharacterList/>
     {/* <LocationsList/> */}
-    <EpisodesList/>
+    {/* <EpisodesList/> */}
   </main>
 }
